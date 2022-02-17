@@ -18,7 +18,6 @@ function getuserinfo() {
             renderAvatar(res.data)
         },
         complete: function (res) {
-            console.log(res);
             if (res.responseJSON.code ===1
                 && res.responseJSON.message === "身份认证失败！") {
                 localStorage.removeItem('token');
